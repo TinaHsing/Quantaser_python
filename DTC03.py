@@ -66,7 +66,7 @@ def runvisa():
 		dmm.stop_bits=constants.StopBits.two
 	
 	else:
-		#dmm.stop_bits=constants.StopBits.one
+		dmm.stop_bits=constants.StopBits.one
 		str_rem =':'+str_rem
 		str_measr=':'+str_measr
 		str_measv =':'+str_measv
@@ -109,13 +109,13 @@ def runvisa():
 		if(var.get() == 1):
 
 			y=dmm.query(str_measv)
-			y=1
+
 
 			tempact =(1/(math.log((float(y))/2.0)/3988+0.003354))-273.15
 			
 		else :
 			y=dmm.query(str_measr)
-			y=1
+
 			tempact =1/ (math.log(float(y)/10000)/3988+0.003354)-273.15
 
 		z.append(tempact)
