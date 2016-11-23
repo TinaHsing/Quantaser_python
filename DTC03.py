@@ -7,7 +7,7 @@ from visa import constants
 import math
 import os
 
-canvas_width = 600
+canvas_width = 700
 canvas_height = 400
 entry_width = 80
 default_ymax = 27.0
@@ -257,6 +257,7 @@ ymin.grid(row =7, column=0, sticky= SE)
 w.grid(row=3 ,column=1, rowspan =5,columnspan=6)
 ymax.insert(0, str(default_ymax))
 ymin.insert(0, str(default_ymin))
+comport.insert(0, '7')
 
 filepath.insert(0,os.getcwd()+'\\' )
 
