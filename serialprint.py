@@ -1,4 +1,4 @@
-import serial
+import Serial
 import datetime
 ser = ser = serial.Serial('COM6', 9600, timeout=1)
 thefile = open('serialsave4.txt', 'w')
